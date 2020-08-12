@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F798F3224E3E1C90068493F /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F798F3124E3E1C90068493F /* Books.swift */; };
+		7F798F3524E3E1E10068493F /* BooksResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F798F3424E3E1E10068493F /* BooksResponses.swift */; };
 		7FDC231D24E1562C00BE04D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC231C24E1562C00BE04D3 /* AppDelegate.swift */; };
 		7FDC231F24E1562C00BE04D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC231E24E1562C00BE04D3 /* SceneDelegate.swift */; };
 		7FDC232124E1562C00BE04D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC232024E1562C00BE04D3 /* ContentView.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F798F3124E3E1C90068493F /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
+		7F798F3424E3E1E10068493F /* BooksResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksResponses.swift; sourceTree = "<group>"; };
 		7FDC231924E1562C00BE04D3 /* LOTR App SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LOTR App SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FDC231C24E1562C00BE04D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FDC231E24E1562C00BE04D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F798F3024E3E1BB0068493F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F798F3324E3E1D50068493F /* DTOs */,
+				7F798F3624E3E1E60068493F /* Responses */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F798F3324E3E1D50068493F /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				7F798F3124E3E1C90068493F /* Books.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		7F798F3624E3E1E60068493F /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				7F798F3424E3E1E10068493F /* BooksResponses.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
 		7FDC231024E1562C00BE04D3 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +85,7 @@
 		7FDC231B24E1562C00BE04D3 /* LOTR App SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				7F798F3024E3E1BB0068493F /* Model */,
 				7FDC231C24E1562C00BE04D3 /* AppDelegate.swift */,
 				7FDC231E24E1562C00BE04D3 /* SceneDelegate.swift */,
 				7FDC232024E1562C00BE04D3 /* ContentView.swift */,
@@ -146,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F798F3224E3E1C90068493F /* Books.swift in Sources */,
 				7FDC231D24E1562C00BE04D3 /* AppDelegate.swift in Sources */,
+				7F798F3524E3E1E10068493F /* BooksResponses.swift in Sources */,
 				7FDC231F24E1562C00BE04D3 /* SceneDelegate.swift in Sources */,
 				7FDC232124E1562C00BE04D3 /* ContentView.swift in Sources */,
 			);
