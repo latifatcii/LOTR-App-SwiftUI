@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		7F798F3224E3E1C90068493F /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F798F3124E3E1C90068493F /* Books.swift */; };
 		7F798F3524E3E1E10068493F /* BooksResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F798F3424E3E1E10068493F /* BooksResponses.swift */; };
+		7F798F3824E51A590068493F /* LOTRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F798F3724E51A590068493F /* LOTRService.swift */; };
+		7F798F3B24E51A7B0068493F /* APIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F798F3A24E51A7B0068493F /* APIErrors.swift */; };
+		7F798F3D24E51C000068493F /* APISettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F798F3C24E51C000068493F /* APISettings.swift */; };
+		7F798F3F24E52C520068493F /* BooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F798F3E24E52C520068493F /* BooksViewModel.swift */; };
+		7F798F4424E535CD0068493F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F798F4324E535CD0068493F /* Movie.swift */; };
+		7F798F4624E535D60068493F /* MovieResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F798F4524E535D60068493F /* MovieResponses.swift */; };
+		7F798F4824E536160068493F /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F798F4724E536160068493F /* MoviesViewModel.swift */; };
+		7F798F4D24E537130068493F /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F798F4C24E537130068493F /* BooksView.swift */; };
+		7F798F4F24E537580068493F /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F798F4E24E537580068493F /* MoviesView.swift */; };
 		7FDC231D24E1562C00BE04D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC231C24E1562C00BE04D3 /* AppDelegate.swift */; };
 		7FDC231F24E1562C00BE04D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC231E24E1562C00BE04D3 /* SceneDelegate.swift */; };
 		7FDC232124E1562C00BE04D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC232024E1562C00BE04D3 /* ContentView.swift */; };
@@ -20,6 +29,15 @@
 /* Begin PBXFileReference section */
 		7F798F3124E3E1C90068493F /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
 		7F798F3424E3E1E10068493F /* BooksResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksResponses.swift; sourceTree = "<group>"; };
+		7F798F3724E51A590068493F /* LOTRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOTRService.swift; sourceTree = "<group>"; };
+		7F798F3A24E51A7B0068493F /* APIErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrors.swift; sourceTree = "<group>"; };
+		7F798F3C24E51C000068493F /* APISettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISettings.swift; sourceTree = "<group>"; };
+		7F798F3E24E52C520068493F /* BooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewModel.swift; sourceTree = "<group>"; };
+		7F798F4324E535CD0068493F /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		7F798F4524E535D60068493F /* MovieResponses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieResponses.swift; sourceTree = "<group>"; };
+		7F798F4724E536160068493F /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
+		7F798F4C24E537130068493F /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
+		7F798F4E24E537580068493F /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
 		7FDC231924E1562C00BE04D3 /* LOTR App SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LOTR App SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FDC231C24E1562C00BE04D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FDC231E24E1562C00BE04D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +71,7 @@
 		7F798F3324E3E1D50068493F /* DTOs */ = {
 			isa = PBXGroup;
 			children = (
+				7F798F4324E535CD0068493F /* Movie.swift */,
 				7F798F3124E3E1C90068493F /* Books.swift */,
 			);
 			path = DTOs;
@@ -62,8 +81,55 @@
 			isa = PBXGroup;
 			children = (
 				7F798F3424E3E1E10068493F /* BooksResponses.swift */,
+				7F798F4524E535D60068493F /* MovieResponses.swift */,
 			);
 			path = Responses;
+			sourceTree = "<group>";
+		};
+		7F798F3924E51A640068493F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7F798F3724E51A590068493F /* LOTRService.swift */,
+				7F798F3A24E51A7B0068493F /* APIErrors.swift */,
+				7F798F3C24E51C000068493F /* APISettings.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7F798F4024E52DD40068493F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7F798F4924E536D80068493F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F798F5024E53FC10068493F /* Books */,
+				7F798F5124E53FC70068493F /* Movies */,
+				7FDC232024E1562C00BE04D3 /* ContentView.swift */,
+				7F798F4024E52DD40068493F /* ViewModels */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7F798F5024E53FC10068493F /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				7F798F4C24E537130068493F /* BooksView.swift */,
+				7F798F3E24E52C520068493F /* BooksViewModel.swift */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		7F798F5124E53FC70068493F /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				7F798F4E24E537580068493F /* MoviesView.swift */,
+				7F798F4724E536160068493F /* MoviesViewModel.swift */,
+			);
+			path = Movies;
 			sourceTree = "<group>";
 		};
 		7FDC231024E1562C00BE04D3 = {
@@ -85,10 +151,11 @@
 		7FDC231B24E1562C00BE04D3 /* LOTR App SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				7F798F3924E51A640068493F /* Service */,
 				7F798F3024E3E1BB0068493F /* Model */,
+				7F798F4924E536D80068493F /* Views */,
 				7FDC231C24E1562C00BE04D3 /* AppDelegate.swift */,
 				7FDC231E24E1562C00BE04D3 /* SceneDelegate.swift */,
-				7FDC232024E1562C00BE04D3 /* ContentView.swift */,
 				7FDC232224E1562F00BE04D3 /* Assets.xcassets */,
 				7FDC232724E1562F00BE04D3 /* LaunchScreen.storyboard */,
 				7FDC232A24E1562F00BE04D3 /* Info.plist */,
@@ -177,10 +244,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F798F3224E3E1C90068493F /* Books.swift in Sources */,
+				7F798F3B24E51A7B0068493F /* APIErrors.swift in Sources */,
+				7F798F4624E535D60068493F /* MovieResponses.swift in Sources */,
 				7FDC231D24E1562C00BE04D3 /* AppDelegate.swift in Sources */,
+				7F798F3824E51A590068493F /* LOTRService.swift in Sources */,
+				7F798F4424E535CD0068493F /* Movie.swift in Sources */,
 				7F798F3524E3E1E10068493F /* BooksResponses.swift in Sources */,
+				7F798F4824E536160068493F /* MoviesViewModel.swift in Sources */,
 				7FDC231F24E1562C00BE04D3 /* SceneDelegate.swift in Sources */,
 				7FDC232124E1562C00BE04D3 /* ContentView.swift in Sources */,
+				7F798F4D24E537130068493F /* BooksView.swift in Sources */,
+				7F798F4F24E537580068493F /* MoviesView.swift in Sources */,
+				7F798F3F24E52C520068493F /* BooksViewModel.swift in Sources */,
+				7F798F3D24E51C000068493F /* APISettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
