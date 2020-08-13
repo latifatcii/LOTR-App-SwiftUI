@@ -21,7 +21,7 @@ final class BooksViewModel: ObservableObject {
         
         self.service = service
         _ = service.fetchBooks()
-            
+            .receive(on: RunLoop.main)
             .sink(receiveCompletion: {
                 completion in
                 switch completion {
@@ -37,6 +37,5 @@ final class BooksViewModel: ObservableObject {
             })
             
             .store(in: &subscriptions)
-        
     }
 }

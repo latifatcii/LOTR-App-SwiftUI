@@ -21,6 +21,7 @@ final class MoviesViewModel: ObservableObject {
         self.service = service
         
         service.fetchMovies()
+            .receive(on: RunLoop.main)
             .sink(receiveCompletion: {
                 completion in
                 switch completion {

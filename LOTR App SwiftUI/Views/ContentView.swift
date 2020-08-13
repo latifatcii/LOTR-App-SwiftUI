@@ -14,23 +14,26 @@ struct ContentView: View {
     @ObservedObject var movieViewModel = MoviesViewModel()
     
     var body: some View {
-        NavigationView {
-            TabView {
-                BookTab(bookVM: viewModel)
-                    .tabItem {
-                        Image(systemName: "book")
-                        Text("Books")
-                }
-                
-                MovieTab(movieVM: movieViewModel)
-                    .tabItem {
-                        Image(systemName: "film")
-                        Text("Movies")
-                }
-                
-                }.navigationBarTitle(Text("Books"))
-            
         
+        TabView {
+            NavigationView {
+                BookTab(bookVM: viewModel)
+                .navigationBarTitle(Text("Books"))
+            }
+            .tabItem {
+                Image(systemName: "book")
+                Text("Books")
+            }
+            
+            NavigationView {
+                MovieTab(movieVM: movieViewModel)
+                .navigationBarTitle(Text("Movies"))
+            }
+            .tabItem {
+                Image(systemName: "film")
+                Text("Movies")
+            }
+            
         }
     }
 }
