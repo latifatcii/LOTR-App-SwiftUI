@@ -34,10 +34,13 @@ struct BookDetail: View {
 struct BookTab: View {
     var bookVM: BooksViewModel
     var body: some View {
-        List(bookVM.books) { book in
-            NavigationLink(destination: BookDetail(book: book)) {
-                BookRow(books: book)
-            }
+        NavigationView {
+            List(bookVM.books) { book in
+                NavigationLink(destination: BookDetail(book: book)) {
+                    BookRow(books: book)
+                }
+            }.navigationBarTitle(Text("Books"))
+
         }
     }
 }

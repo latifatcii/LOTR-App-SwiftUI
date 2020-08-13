@@ -15,6 +15,7 @@ final class BooksViewModel: ObservableObject {
     
     
     private var subscriptions = Set<AnyCancellable>()
+    @Published var loading = true
     @Published private(set) var books = [Books]()
     
     init(service: LOTRService = LOTRService()) {
@@ -26,6 +27,7 @@ final class BooksViewModel: ObservableObject {
                 completion in
                 switch completion {
                 case .failure(let error):
+                    self.loading = false
                     print(error.rawValue)
                 case .finished:
                     print("finished")

@@ -34,10 +34,13 @@ struct MovieDetail: View {
 struct MovieTab: View {
     var movieVM: MoviesViewModel
     var body: some View {
-        List(movieVM.movies) { movie in
-            NavigationLink(destination: MovieDetail(movie: movie)) {
-                MovieRow(movies: movie)
-            }
+        NavigationView {
+            List(movieVM.movies) { movie in
+                NavigationLink(destination: MovieDetail(movie: movie)) {
+                    MovieRow(movies: movie)
+                }
+            }.navigationBarTitle(Text("Movies"))
+
         }
     }
 }
